@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <!-- General CSS like commands, replace when UI or UX is available -->
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:src="@drawable/Messenger"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background"
+        android:hint="Email"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/background"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:text="let me in" />
+
+
+</RelativeLayout>
